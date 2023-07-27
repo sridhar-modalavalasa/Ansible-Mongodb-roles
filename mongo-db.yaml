@@ -1,0 +1,8 @@
+- name: Install and configure MongoDB on Ubuntu 22.04 
+  hosts: my-servers
+  become_user: root
+  become_method: sudo
+  become: true
+  roles:
+    - mongodb
+    - mongodb_users
