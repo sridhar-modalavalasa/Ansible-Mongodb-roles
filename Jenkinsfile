@@ -3,7 +3,7 @@ pipeline {
     stages {
       stage('SCM Checkout') {
         steps {
-           checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/sridhar-modalavalasa/Ansible-web-app.git']]])  
+           checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/sridhar-modalavalasa/Ansible-Mongodb-roles.git']]])  
         }
       }  
       stage('Execute Ansible') {
